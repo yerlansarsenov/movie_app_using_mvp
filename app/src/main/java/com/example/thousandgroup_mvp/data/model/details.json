@@ -1,0 +1,87 @@
+{
+  "adult": false,
+  "backdrop_path": "/eCIvqa3QVCx6H09bdeOS8Al2Sqy.jpg",
+  "belongs_to_collection": null,
+  "budget": 67000000,
+  "genres": [
+    {
+      "id": 28,
+      "name": "Action"
+    },
+    {
+      "id": 878,
+      "name": "Science Fiction"
+    },
+    {
+      "id": 27,
+      "name": "Horror"
+    },
+    {
+      "id": 12,
+      "name": "Adventure"
+    }
+  ],
+  "homepage": "https://www.foxmovies.com/movies/the-new-mutants",
+  "id": 340102,
+  "imdb_id": "tt4682266",
+  "original_language": "en",
+  "original_title": "The New Mutants",
+  "overview": "Five young mutants, just discovering their abilities while held in a secret facility against their will, fight to escape their past sins and save themselves.",
+  "popularity": 268.816,
+  "poster_path": "/45FNxAIooJFqjsVaCJts9YJHXS4.jpg",
+  "production_companies": [
+    {
+      "id": 7505,
+      "logo_path": "/837VMM4wOkODc1idNxGT0KQJlej.png",
+      "name": "Marvel Entertainment",
+      "origin_country": "US"
+    },
+    {
+      "id": 127928,
+      "logo_path": "/qAh0Ofz47KVy0A3118rjHUx3usk.png",
+      "name": "20th Century Studios",
+      "origin_country": "US"
+    },
+    {
+      "id": 25,
+      "logo_path": "/qZCc1lty5FzX30aOCVRBLzaVmcp.png",
+      "name": "20th Century Fox",
+      "origin_country": "US"
+    },
+    {
+      "id": 22213,
+      "logo_path": "/qx9K6bFWJupwde0xQDwOvXkOaL8.png",
+      "name": "TSG Entertainment",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "release_date": "2020-08-26",
+  "revenue": 3100000,
+  "runtime": 94,
+  "spoken_languages": [
+    {
+      "iso_639_1": "es",
+      "name": "Español"
+    },
+    {
+      "iso_639_1": "fr",
+      "name": "Français"
+    },
+    {
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Released",
+  "tagline": "It's time to face your demons",
+  "title": "The New Mutants",
+  "video": false,
+  "vote_average": 6,
+  "vote_count": 224
+}
