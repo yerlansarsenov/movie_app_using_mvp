@@ -148,11 +148,19 @@ public class MovieDetailFragment extends PresenterFragment implements MovieDetai
             cnt++;
         }
         genresView.setText(genres);
-        Picasso.get().load(BuildConfig.IMAGE_BASE_URL.concat(film.getPosterPath()))
-                .fit()
-                .centerCrop()
-                .placeholder(R.drawable.place)
-                .into(imageView);
+        if (film.getPosterPath() != null) {
+            Picasso.get().load(BuildConfig.IMAGE_BASE_URL.concat(film.getPosterPath()))
+                    .fit()
+                    .centerCrop()
+                    .placeholder(R.drawable.place)
+                    .into(imageView);
+        } else if (film.getBackdropPath() != null) {
+            Picasso.get().load(BuildConfig.IMAGE_BASE_URL.concat(film.getBackdropPath()))
+                    .fit()
+                    .centerCrop()
+                    .placeholder(R.drawable.place)
+                    .into(imageView);
+        }
         adapter.setList(film.getProductionCompanies());
     }
 

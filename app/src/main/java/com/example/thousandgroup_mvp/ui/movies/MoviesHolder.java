@@ -33,11 +33,19 @@ public class MoviesHolder extends RecyclerView.ViewHolder {
         titleTV.setText(film.getOriginalTitle());
         releaseTV.setText(film.getReleaseDate());
         ratingBar.setRating(((float)film.getVoteAverage().doubleValue())/2);
-        Picasso.get().load(BuildConfig.IMAGE_BASE_URL.concat(film.getBackdropPath()))
-                .fit()
-                .centerCrop()
-                .placeholder(R.drawable.place)
-                .into(mainIV);
+        if (film.getBackdropPath() != null) {
+            Picasso.get().load(BuildConfig.IMAGE_BASE_URL.concat(film.getBackdropPath()))
+                    .fit()
+                    .centerCrop()
+                    .placeholder(R.drawable.place)
+                    .into(mainIV);
+        } else if (film.getPosterPath() != null) {
+            Picasso.get().load(BuildConfig.IMAGE_BASE_URL.concat(film.getPosterPath()))
+                    .fit()
+                    .centerCrop()
+                    .placeholder(R.drawable.place)
+                    .into(mainIV);
+        }
         if (listener != null) {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
