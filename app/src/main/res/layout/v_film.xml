@@ -45,7 +45,7 @@
                 android:layout_gravity="bottom"
                 android:layout_marginStart="25dp"
                 android:layout_marginBottom="70dp"
-                android:background="@android:color/white"
+                android:background="#0e000000"
                 android:textColor="@android:color/black"
                 android:textSize="25sp"
                 tools:text="title" />
@@ -57,7 +57,7 @@
                 android:layout_gravity="bottom"
                 android:layout_marginStart="25dp"
                 android:layout_marginBottom="25dp"
-                android:background="@android:color/white"
+                android:background="#0e000000"
                 android:textColor="@android:color/black"
                 android:textSize="25sp"
                 tools:text="relies" />
@@ -80,20 +80,52 @@
             app:layout_constraintTop_toBottomOf="@id/frame_detail"
             tools:text="overview" />
 
-        <TextView
+        <LinearLayout
             android:id="@+id/genres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
             android:layout_marginHorizontal="15dp"
             android:layout_marginVertical="20dp"
-            android:textColor="@android:color/white"
-            android:textSize="23sp"
             app:layout_constraintBottom_toTopOf="@id/prod_comp_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/over_detail"
-            tools:text="genres" />
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="23sp"
+                android:text="@string/genres"
+                />
+            <TextView
+                android:id="@+id/genres_tv"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="23sp"
+                tools:text="genres"
+                />
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/genres"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_marginHorizontal="15dp"-->
+<!--            android:layout_marginVertical="20dp"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="23sp"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/prod_comp_text"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/over_detail"-->
+<!--            tools:text="genres" />-->
+
         <TextView
             android:id="@+id/prod_comp_text"
             android:layout_width="match_parent"
